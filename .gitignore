@@ -1,0 +1,19 @@
+# Compiled programs and object files
+crashsafe
+*.o
+build/
+
+# macOS files
+.DS_Store
+
+# Test and transfer data
+source/*
+!source/.gitkeep
+
+destination/*
+!destination/.gitkeep
+
+# Runtime journal
+data/*
+!data/.gitkeep
+

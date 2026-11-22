@@ -1,0 +1,19 @@
+//This tells the C/C++ extension to use Apple's Clang and the C11 language standard
+//  on your Apple Silicon Mac. 
+// The extension helps VS Code understand your code. It does not replace Clang
+
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}
