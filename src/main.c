@@ -148,8 +148,8 @@ int main(int argc, char *argv[])
         return 1;
     }
     for(int i=0; i<list.task_count;i++){
-        list.tasks[i].source_path=argv[(first_path+2)*i];
-        list.tasks[i].destination_path=argv[(first_path+2)*i+1];
+        list.tasks[i].source_path=argv[first_path+2*i];
+        list.tasks[i].destination_path=argv[first_path+2*i+1];
     }
     check_pthread(pthread_mutex_init(&list.mutex, NULL),"initialize the  mutex");
 
